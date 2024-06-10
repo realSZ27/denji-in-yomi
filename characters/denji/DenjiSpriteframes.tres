@@ -1,0 +1,175 @@
+[gd_resource type="SpriteFrames" load_steps=46 format=2]
+
+[ext_resource path="res://_Denji/characters/denji/sprites/denji-knockdown.png" type="Texture" id=1]
+[ext_resource path="res://_Denji/characters/denji/sprites/roll/denji-rollforward1.png" type="Texture" id=2]
+[ext_resource path="res://_Denji/characters/denji/sprites/denji-dashback.png" type="Texture" id=3]
+[ext_resource path="res://_Denji/characters/denji/sprites/denji-wait.png" type="Texture" id=4]
+[ext_resource path="res://_Denji/characters/denji/sprites/denji-hgh.png" type="Texture" id=5]
+[ext_resource path="res://_Denji/characters/denji/sprites/denji-dashforward.png" type="Texture" id=6]
+[ext_resource path="res://_Denji/characters/denji/sprites/denji-burst.png" type="Texture" id=7]
+[ext_resource path="res://_Denji/characters/denji/sprites/denji-ah.png" type="Texture" id=8]
+[ext_resource path="res://_Denji/characters/denji/sprites/denji-hgm.png" type="Texture" id=9]
+[ext_resource path="res://_Denji/characters/denji/sprites/denji-jump.png" type="Texture" id=10]
+[ext_resource path="res://_Denji/characters/denji/sprites/roll/denji-rollforward2.png" type="Texture" id=11]
+[ext_resource path="res://_Denji/characters/denji/sprites/denji-landing.png" type="Texture" id=12]
+[ext_resource path="res://_Denji/characters/denji/sprites/denji-wall.png" type="Texture" id=13]
+[ext_resource path="res://_Denji/characters/denji/sprites/roll/denji-rollforward4.png" type="Texture" id=14]
+[ext_resource path="res://_Denji/characters/denji/sprites/roll/denji-rollforward3.png" type="Texture" id=15]
+[ext_resource path="res://_Denji/characters/denji/sprites/thrust/denji-thrust11.png" type="Texture" id=16]
+[ext_resource path="res://_Denji/characters/denji/sprites/jumpback/denji-jumpback3.png" type="Texture" id=17]
+[ext_resource path="res://_Denji/characters/denji/sprites/throw/denji-throw5.png" type="Texture" id=18]
+[ext_resource path="res://_Denji/characters/denji/sprites/denji-block.png" type="Texture" id=19]
+[ext_resource path="res://_Denji/characters/denji/sprites/thrust/denji-thrust1.png" type="Texture" id=20]
+[ext_resource path="res://_Denji/characters/denji/sprites/denji-grabbed.png" type="Texture" id=21]
+[ext_resource path="res://_Denji/characters/denji/sprites/denji-hgl.png" type="Texture" id=22]
+[ext_resource path="res://_Denji/characters/denji/sprites/denji-getup.png" type="Texture" id=23]
+[ext_resource path="res://_Denji/characters/denji/sprites/thrust/denji-thrust3.png" type="Texture" id=24]
+[ext_resource path="res://_Denji/characters/denji/sprites/thrust/denji-thrust8.png" type="Texture" id=25]
+[ext_resource path="res://_Denji/characters/denji/sprites/thrust/denji-thrust6.png" type="Texture" id=26]
+[ext_resource path="res://_Denji/characters/denji/sprites/thrust/denji-thrust9.png" type="Texture" id=27]
+[ext_resource path="res://_Denji/characters/denji/sprites/throw/denji-throw7.png" type="Texture" id=28]
+[ext_resource path="res://_Denji/characters/denji/sprites/throw/denji-throw8.png" type="Texture" id=29]
+[ext_resource path="res://_Denji/characters/denji/sprites/throw/denji-throw1.png" type="Texture" id=30]
+[ext_resource path="res://_Denji/characters/denji/sprites/throw/denji-throw4.png" type="Texture" id=31]
+[ext_resource path="res://_Denji/characters/denji/sprites/jumpback/denji-jumpback1.png" type="Texture" id=32]
+[ext_resource path="res://_Denji/characters/denji/sprites/thrust/denji-thrust4.png" type="Texture" id=33]
+[ext_resource path="res://_Denji/characters/denji/sprites/denji-instcancel.png" type="Texture" id=34]
+[ext_resource path="res://_Denji/characters/denji/sprites/thrust/denji-thrust2.png" type="Texture" id=35]
+[ext_resource path="res://_Denji/characters/denji/sprites/thrust/denji-thrust12.png" type="Texture" id=36]
+[ext_resource path="res://_Denji/characters/denji/sprites/throw/denji-throw9.png" type="Texture" id=37]
+[ext_resource path="res://_Denji/characters/denji/sprites/thrust/denji-thrust10.png" type="Texture" id=38]
+[ext_resource path="res://_Denji/characters/denji/sprites/throw/denji-throw6.png" type="Texture" id=39]
+[ext_resource path="res://_Denji/characters/denji/sprites/thrust/denji-thrust7.png" type="Texture" id=40]
+[ext_resource path="res://_Denji/characters/denji/sprites/denji-parrylow.png" type="Texture" id=41]
+[ext_resource path="res://_Denji/characters/denji/sprites/jumpback/denji-jumpback4.png" type="Texture" id=42]
+[ext_resource path="res://_Denji/characters/denji/sprites/throw/denji-throw3.png" type="Texture" id=43]
+[ext_resource path="res://_Denji/characters/denji/sprites/jumpback/denji-jumpback2.png" type="Texture" id=44]
+[ext_resource path="res://_Denji/characters/denji/sprites/throw/denji-throw2.png" type="Texture" id=45]
+
+[resource]
+animations = [ {
+"frames": [ ExtResource( 7 ) ],
+"loop": true,
+"name": "Burst",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "DashBackward",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ) ],
+"loop": true,
+"name": "DashForward",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 11 ), ExtResource( 15 ), ExtResource( 14 ) ],
+"loop": true,
+"name": "DoubleJump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 30 ), ExtResource( 45 ), ExtResource( 43 ), ExtResource( 31 ), ExtResource( 18 ), ExtResource( 39 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 37 ) ],
+"loop": true,
+"name": "ForwardThrow",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 23 ) ],
+"loop": true,
+"name": "Getup",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 30 ), ExtResource( 45 ), ExtResource( 43 ), ExtResource( 31 ), ExtResource( 18 ), ExtResource( 39 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 37 ) ],
+"loop": true,
+"name": "Grab",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 21 ) ],
+"loop": true,
+"name": "Grabbed",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 8 ) ],
+"loop": true,
+"name": "HurtAerial",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 5 ) ],
+"loop": true,
+"name": "HurtGroundedHigh",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 22 ) ],
+"loop": true,
+"name": "HurtGroundedLow",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ) ],
+"loop": true,
+"name": "HurtGroundedMid",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 34 ) ],
+"loop": true,
+"name": "InstantCancel",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 10 ) ],
+"loop": true,
+"name": "Jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 32 ), ExtResource( 44 ), ExtResource( 17 ), ExtResource( 42 ) ],
+"loop": true,
+"name": "JumpBack",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "Knockdown",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 12 ) ],
+"loop": true,
+"name": "Landing",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 19 ) ],
+"loop": true,
+"name": "ParryHigh",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 41 ) ],
+"loop": true,
+"name": "ParryLow",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 14 ), ExtResource( 15 ), ExtResource( 11 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "RollBackward",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 11 ), ExtResource( 15 ), ExtResource( 14 ) ],
+"loop": true,
+"name": "RollForward",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 18 ) ],
+"loop": true,
+"name": "ThrowTech",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 20 ), ExtResource( 35 ), ExtResource( 24 ), ExtResource( 33 ), ExtResource( 26 ), ExtResource( 40 ), ExtResource( 25 ), ExtResource( 27 ), ExtResource( 38 ), ExtResource( 16 ), ExtResource( 36 ) ],
+"loop": true,
+"name": "Thrust",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "Wait",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 13 ) ],
+"loop": true,
+"name": "WallSlam",
+"speed": 5.0
+} ]

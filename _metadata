@@ -1,0 +1,13 @@
+{
+  "name": "denji",
+  "friendly_name": "Denji",
+  "description": "Chainsaw Man in YOMI",
+  "author": "SZ27, yospankdaddy",
+  "version": "0.1",
+  "link": "",
+  "id": "3948574698734568973495687349867",
+  "requires": ["char_loader"],
+  "overwrites": false,
+  "priority": 0,
+  "client_side": true
+}
