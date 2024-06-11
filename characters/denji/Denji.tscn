@@ -1,9 +1,8 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://characters/BaseChar.tscn" type="PackedScene" id=1]
 [ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=2]
 [ext_resource path="res://_Denji/characters/denji/DenjiSpriteframes.tres" type="SpriteFrames" id=3]
-[ext_resource path="res://_Denji/characters/denji/sprites/thrust/denji-thrust1.png" type="Texture" id=4]
 [ext_resource path="res://mechanics/Hitbox.gd" type="Script" id=5]
 [ext_resource path="res://_Denji/characters/denji/states/EmptyState.gd" type="Script" id=6]
 
@@ -27,8 +26,12 @@ shader_param/outline_color = Color( 0, 0, 0, 1 )
 [node name="Sprite" parent="Flip" index="0"]
 material = SubResource( 1 )
 frames = ExtResource( 3 )
-animation = "Thrust"
-frame = 5
+animation = "Slam"
+frame = 6
+
+[node name="Taunt" parent="StateMachine" index="55"]
+anim_length = 16
+ticks_per_frame = 2
 
 [node name="Thrust" type="Node2D" parent="StateMachine" index="57"]
 script = ExtResource( 6 )
@@ -36,13 +39,13 @@ apply_forces = true
 apply_fric = true
 apply_grav = true
 sprite_animation = "Thrust"
-anim_length = 12
+anim_length = 24
+ticks_per_frame = 2
 enter_force_dir_x = "1"
 enter_force_dir_y = "0"
 enter_force_speed = "5"
 title = "Thrust"
 type = 1
-button_texture = ExtResource( 4 )
 air_type = 2
 interrupt_from_string = "Grounded
 Aerial"
@@ -69,6 +72,52 @@ cancellable = false
 can_clash = false
 screenshake_amount = 2
 dir_y = "0"
-knockback = "7"
+knockback = "4"
 start_tick = 5
 active_ticks = 3
+
+[node name="Slam" type="Node2D" parent="StateMachine" index="58"]
+script = ExtResource( 6 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+custom_grav_max_fall_speed = "200"
+sprite_animation = "Slam"
+anim_length = 14
+ticks_per_frame = 2
+enter_force_dir_x = "0"
+enter_force_dir_y = "1"
+enter_force_speed = "10"
+state_screenshake_tick = 7
+title = "Slam"
+type = 1
+air_type = 1
+interrupt_from_string = "Aerial"
+interrupt_into_string = "Aerial"
+hit_cancel_into_string = "GroundedAttack
+GroundedSpecial
+AerialAttack
+AerialSpecial"
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/Slam" index="0"]
+position = Vector2( -5, -3 )
+z_index = 1000
+script = ExtResource( 5 )
+x = 4
+y = -11
+width = 15
+height = -14
+damage = 120
+hitstun_ticks = 25
+hitlag_ticks = 10
+victim_hitlag = 10
+cancellable = false
+hits_vs_aerial = false
+can_clash = false
+hit_height = 0
+screenshake_amount = 2
+dir_y = "0"
+knockback = "7"
+knockdown = true
+start_tick = 14
+active_ticks = 14
